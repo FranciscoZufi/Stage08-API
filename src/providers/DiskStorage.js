@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const uploadConfig = requie('../configs/upload.js')
+const uploadConfig = require('../configs/upload.js')
 
 class DiskStorage {
   async saveFile(file) {
