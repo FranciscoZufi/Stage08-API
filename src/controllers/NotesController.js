@@ -37,7 +37,7 @@ class NotesController {
     const links = await knex('links')
       .where({ note_id: id })
       .orderBy('created_at')
-
+    console.log({ note })
     return response.json({ note, tags, links })
   }
   async delete(request, response) {
